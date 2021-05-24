@@ -10,6 +10,6 @@ first_contact = "//div[@class='_1C2Q3 _36Jt6']//div[@class='_2aBzC'][2]"
 message = "//footer[@class='_3uxr9']//div[@class='_2_1wd copyable-text selectable-text']"
 
 contacts = ["Sayang"]
-greeting = "*Assalamualaikum wrt and Good day brothers and sisters!*"
-footer = "_I automated this using python. If you found it interesting, " \
-         "you can check out https://github.com/adamzulqar9/whatsapp-hadith :)_"
+greeting = "*Assalamualaikum wrt and Good day brothers and sisters!. A hadith a day keeps our iman at bay!*"
+footer = "_This is an automated message. If you would like to learn more on how this was configured, " \
+         "you can check out https://github.com/adamzulqar9/whatsapp-hadith_"
