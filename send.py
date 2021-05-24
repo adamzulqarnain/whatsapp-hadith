@@ -17,6 +17,8 @@ def send():
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
         helper.send(driver, config.message, title)
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
+        helper.send(driver, config.message, "--")
+        helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
         helper.send(driver, config.message, content)
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
