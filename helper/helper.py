@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
-from pyvirtualdisplay import Display
 import config
 import requests
 import json
@@ -21,6 +20,7 @@ def setup():
     chrome_options = Options()
     chrome_options.add_experimental_option("debuggerAddress", config.port)
     driver = webdriver.Chrome(config.chrome_driver, options=chrome_options)
+    # driver = webdriver.Firefox(config.gecko_driver, options=chrome_options)
     driver.get(config.web)
     return driver
 

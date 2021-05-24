@@ -1,4 +1,5 @@
-chrome_driver = ".\\chromedriver.exe"
+chrome_driver = "/usr/lib/chromium-browser/chromedriver"
+gecko_driver = "helper/geckodriver"
 port = "127.0.0.1:9999"
 api = "https://api.sunnah.com/v1/hadiths/random"
 headers = {"x-api-key": 'SqD712P3E82xnwOAEOkGd5JZH8s9wRR24TqNFzjk'}
