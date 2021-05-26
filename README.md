@@ -47,7 +47,7 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
    ```
    setup_raspberry.sh
    ```
-4. Once browser is up and running, you need to navigate to web.whatsapp.com and scan QR code from your phone (only needed once). Note that you cannot close this browser as the script will always use this browser to send whatsapp messages
+4. Once browser is up and running, you need to navigate to `web.whatsapp.com` and scan QR code from your phone (only needed once). Note that you cannot close this browser as the script will always use this browser to send whatsapp messages
 
 5. Setup crontab to schedule when to send out these messages, frequency of sending depends on the configuration you set on crontab. In this case, I used the following config which will send the messages at 9am everyday
    ```
@@ -70,4 +70,5 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
 1. Add support to get argument parameter to handle setup on linux or windows as well
 2. Add support for firefox (geckodriver)
 3. Add exception handling when running script to handle any erros
-4. Get a dedicated number and phone, any interested group can add this number into their group. Once configured, hadith will be send to these whatsapp groups on a daily basis
+4. Add logging/print traces for debugging purposes
+5. Get a dedicated number and phone, any interested group can add this number into their group. Once configured, hadith will be send to these whatsapp groups on a daily basis
