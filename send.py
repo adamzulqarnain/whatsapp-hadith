@@ -4,9 +4,9 @@ import helper.helper as helper
 
 
 def send():
-    header, title, content = helper.get_hadith()
     driver = helper.setup()
     for contact in config.contacts:
+        header, title, content = helper.get_hadith()
         helper.click(driver, config.new_chat)
         helper.send(driver, config.search, contact)
         helper.click(driver, config.first_contact)
