@@ -70,4 +70,3 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
 2. Add support for firefox (geckodriver)
 3. Add exception handling when running script to handle any erros
 4. Add logging/print traces for debugging purposes
-5. Get a dedicated number and phone, any interested group can add this number into their group. Once configured, hadith will be send to these whatsapp groups on a daily basis
