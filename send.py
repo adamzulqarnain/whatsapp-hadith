@@ -1,11 +1,11 @@
 from selenium.webdriver.common.keys import Keys
-import config
+from configuration import config, contacts
 import helper.helper as helper
 
 
 def send():
     driver = helper.setup()
-    for contact in config.contacts:
+    for contact in contacts.contacts:
         header, title, content = helper.get_hadith()
         helper.click(driver, config.new_chat)
         helper.send(driver, config.search, contact)
