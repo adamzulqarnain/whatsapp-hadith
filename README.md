@@ -3,12 +3,12 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
 
 > A hadith a day, keeps our iman at bay. InsyaAllah :)
 
-All hadiths used are being fetched from this API: "https://api.sunnah.com/v1/hadiths/random"
+All hadiths used are being fetched from this API: https://api.sunnah.com/v1/hadiths/random
 
 ## Tools/API used:
 1. **python**
 2. **selenium** webdriver API
-3. **request lib** for REST request
+3. **request** lib for REST request
 4. **json** lib to read REST response
 5. **re** lib to use regex for striping HTML code in response body
 
@@ -18,7 +18,7 @@ All hadiths used are being fetched from this API: "https://api.sunnah.com/v1/had
 3. Kernel: 5.4.51-v7l+
 
 ## Setting up:
-1. Create venv and install dependencies on requirements.txt
+1. Create venv and install dependencies specified in requirements.txt
    ```
    pip install -r requirements.txt
    ```
@@ -31,7 +31,7 @@ All hadiths used are being fetched from this API: "https://api.sunnah.com/v1/had
    # unzip libwidevinecdm.so_.zip && chmod 755 libwidevinecdm.so
    # wget http://blog.vpetkov.net/wp-content/uploads/2020/03/chromium-media-browser.desktop.zip
    # unzip chromium-media-browser.desktop.zip && mv chromium-media-browser.desktop /usr/share/applications
-   ````
+   ```
 3. Run following script to open chromium browser using a specific port, in this case port: 9999
    ```
    setup_raspberry.sh
