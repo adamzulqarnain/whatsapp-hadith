@@ -28,18 +28,18 @@ def setup():
 def get_hadith():
     """
     Requests random hadith via REST from www.sunnah.com API
-    :return: header, title, content of hadith
+    :return: header, title, hadith, content
     """
     response = requests.get(config.api, headers=config.headers)
     response_dict = json.loads(response.text)
     send_body = re.sub('<[^<]+?>', '', response_dict["hadith"][0]["body"])
 
-    header = "*Collection*: {}, *Book*: {}, *Hadith Number*: {}, *Chapter Number*: {}"\
-        .format(response_dict["collection"], response_dict["bookNumber"], response_dict["hadithNumber"],
-                response_dict["hadith"][0]["chapterNumber"])
+    header = "*Collection*: {}, *Book*: {}".format(response_dict["collection"], response_dict["bookNumber"])
+    hadith = "*Hadith Number*: {}, *Chapter Number*: {}".format(response_dict["hadithNumber"],
+                                                                response_dict["hadith"][0]["chapterNumber"])
     title = "*Chapter Title*: {}".format(response_dict["hadith"][0]["chapterTitle"])
     content = "\"{}\"".format(send_body)
-    return header, title, content
+    return header, hadith, title, content
 
 
 def click(driver, elem):

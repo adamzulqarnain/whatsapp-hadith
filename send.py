@@ -6,7 +6,7 @@ import helper.helper as helper
 def send():
     driver = helper.setup()
     for contact in contacts.contacts:
-        header, title, content = helper.get_hadith()
+        header, hadith, title, content = helper.get_hadith()
         helper.click(driver, config.new_chat)
         helper.send(driver, config.search, contact)
         helper.click(driver, config.first_contact)
@@ -14,6 +14,8 @@ def send():
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
         helper.send(driver, config.message, header)
+        helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
+        helper.send(driver, config.message, hadith)
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
         helper.send(driver, config.message, title)
         helper.send(driver, config.message, Keys.ALT, Keys.ENTER)
