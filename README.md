@@ -3,6 +3,8 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
 
 > A hadith a day, keeps our iman at bay. InsyaAllah :)
 
+All hadiths used are being fetched from this API: "https://api.sunnah.com/v1/hadiths/random"
+
 ## Tools/API used:
 1. **python**
 2. **selenium** webdriver API
