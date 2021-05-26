@@ -48,4 +48,4 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
 
 // TODO: 
 1. Add support to get argument parameter to handle setup on linux or windows as well
-2. Get a dedicated phone number and phone, any interested group and add this number into their group. Once configured, hadith will be send to these whatsapp group on a daily basis
+2. Get a dedicated phone number and phone, any interested group can add this number into their group. Once configured, hadith will be send to these whatsapp group on a daily basis
