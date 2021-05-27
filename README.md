@@ -33,20 +33,20 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
    pip install -r requirements.txt
    ```
 2. Due to some limitation, chromium on raspbian doesnt allow whatsapp web hence a workaround is needed. Full context and information available [here](https://blog.vpetkov.net/2019/07/12/netflix-and-spotify-on-a-raspberry-pi-4-with-latest-default-chromium/)
-   or TLDR version, run the follow command on raspberry pi terminal
+   or TLDR version, run the following commands on raspberry pi terminal
    ```
-   # sudo su
-   # cd /usr/lib/chromium-browser
-   # wget http://blog.vpetkov.net/wp-content/uploads/2020/03/libwidevinecdm.so_.zip
-   # unzip libwidevinecdm.so_.zip && chmod 755 libwidevinecdm.so
-   # wget http://blog.vpetkov.net/wp-content/uploads/2020/03/chromium-media-browser.desktop.zip
-   # unzip chromium-media-browser.desktop.zip && mv chromium-media-browser.desktop /usr/share/applications
+   sudo su
+   cd /usr/lib/chromium-browser
+   wget http://blog.vpetkov.net/wp-content/uploads/2020/03/libwidevinecdm.so_.zip
+   unzip libwidevinecdm.so_.zip && chmod 755 libwidevinecdm.so
+   wget http://blog.vpetkov.net/wp-content/uploads/2020/03/chromium-media-browser.desktop.zip
+   unzip chromium-media-browser.desktop.zip && mv chromium-media-browser.desktop /usr/share/applications
    ```
 3. Run following script to open chromium browser using a specific port, in this case port: 9999
    ```
    setup_raspberry.sh
    ```
-4. Once browser is up and running, you need to navigate to `web.whatsapp.com` and scan QR code from your phone (only needed once). Note that you cannot close this browser as the script will always use this browser to send whatsapp messages
+4. Once browser is up and running, you need to navigate to `web.whatsapp.com` and scan QR code using your phone (only needed once). Note that you cannot close this browser as the script will always use this browser to send whatsapp messages
 
 5. Setup crontab to schedule when to send out these messages, frequency of sending depends on the configuration you set on crontab. In this case, I used the following config which will send the messages at 9am everyday
    ```
