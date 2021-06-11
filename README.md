@@ -1,8 +1,6 @@
 # whatsapp-hadith
 Python script to send hadith to selected contacts/group via WhatsApp using selenium, requests and json libs
 
-> A hadith a day, keeps our iman at bay. InsyaAllah :)
-
 ## Basic Information:
 1. All hadiths used are being fetched from this API: https://api.sunnah.com/v1/hadiths/random
 2. In order to request via API, you would need to include x-api-key in the headers specified in `configuration/config.py`. You can request for API access here https://github.com/sunnah-com/api/issues
