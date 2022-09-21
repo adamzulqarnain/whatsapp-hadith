@@ -57,10 +57,7 @@ Python script to send hadith to selected contacts/group via WhatsApp using selen
    ```
    contacts = ["Manjung Tribes", .., ..]
    ```
-
-## WhatsApp Message Format:
-![ws](https://i.imgur.com/QAj2suM.png)
-   
+ 
 ## Limitations:
 1. Group names need to be unique, otherwise message may be sent to unintended group
 
