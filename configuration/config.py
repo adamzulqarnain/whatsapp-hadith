@@ -12,4 +12,4 @@ message = "//footer[@class='_3uxr9']//div[@class='_2_1wd copyable-text selectabl
 
 greeting = "*Assalamualaikum wrt and Good day brothers and sisters!*"
 footer = "_This is an automated message. If you would like to learn more on how this was configured, " \
-         "you can check out https://github.com/adamzulqar9/whatsapp-hadith_"
+         "you can check out https://github.com/adamzulqarnain/whatsapp-hadith_"
